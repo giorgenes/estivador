@@ -28,29 +28,37 @@ Or install it yourself as:
 
 ## Usage
 
-    # simply registers an empty container
+simply registers an empty container
+
     $ estivador add <container>
 
-    # configure variables for the container
+configure variables for the container
+
     $ estivador config <container> environment.db_passoword abcd1234
 
-    # configure container ports
+configure container ports
+
     $ estivador config <container> ports 3000:3000
 
-    # runs the container as a service and adds monitoring for it
+runs the container as a service and adds monitoring for it
+
     $ estivador start <container>
 
-    # restarts the container going instance by instance
-    # and restarting them one by one
+restarts the container going instance by instance
+and restarting them one by one
+
     $ estivador phased-restart <container>
 
-    # pulls new version of the container and does a phased-restart
+pulls new version of the container and does a phased-restart
+
     $ estivador phased-update <container>
 
-    # runs the container a single time
+runs the container a single time
+
     $ estivador run <container> params ...
 
-    # gets the status of managed containers
+gets the status of managed containers
+
     $ estivador status
 
 ## Contributing
